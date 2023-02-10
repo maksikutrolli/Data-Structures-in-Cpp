@@ -11,7 +11,7 @@ using namespace std;
 
 class ListArray:public List {
 
-public:
+private:
 	static const int MaxSize = 50;
 	int end = -1;
 	int listArray[MaxSize];
