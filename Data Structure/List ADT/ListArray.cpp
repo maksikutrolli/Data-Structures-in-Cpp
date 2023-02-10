@@ -17,7 +17,7 @@ ListArray::ListArray(const ListArray &other) {
 
 ListArray& ListArray::operator=(const ListArray &other) {
 	// TODO Auto-generated method stub
-
+	return *this;
 }
 
 bool ListArray::isEmpty() {
