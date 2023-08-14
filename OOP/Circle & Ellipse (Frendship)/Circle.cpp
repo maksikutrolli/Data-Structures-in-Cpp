@@ -1,28 +1,38 @@
-
+/*
+ *      Author: MaksiKutrolli
+ */
 
 #include "Circle.h"
 
+// Implementation of Circle class methods
+
+// Default constructor
 Circle::Circle() {
 }
+
+// Parameterized constructor
 Circle::Circle(double r) {
 	radius = r;
 }
+
+// Destructor
 Circle::~Circle() {
 }
+
+// Method to calculate the area of the circle
 double Circle::area() {
-	return pi*radius*radius;
+	return pi * radius * radius;
 }
 
-//assignment operator
-void Circle::operator =(const Circle &other) {
+// Assignment operator
+void Circle::operator=(const Circle &other) {
 	radius = other.radius;
 }
 
-Circle duplicate (const Circle& other){
+// Friend function to duplicate a circle
+Circle duplicate(const Circle& other) {
 	Circle circle;
 	circle.radius = other.radius * 2;
-
 	return circle;
 }
-
 
