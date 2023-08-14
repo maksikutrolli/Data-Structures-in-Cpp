@@ -1,40 +1,53 @@
+/*
+ *      Author: MaksiKutrolli
+ */
+
+
+//Implementation of the Person class
 
 #include "Person.h"
 
-
-
+// Destructor definition
 Person::~Person() {
-
-	cout<<"--->destroy person"<<endl;
+	cout << "--->destroy person" << endl;
 }
 
+// Default constructor definition
 Person::Person() {
-	cout<<"--->create person"<<endl;
+	cout << "--->create person" << endl;
 }
 
-Person::Person(string firstName, string lastName, string id) {
-
-	this->firstName = firstName;
-	this->lastName = lastName;
-	this->id = id;
-	cout<<"--->create person"<<endl;
-}
-
-void Person::operator =(const Person &p) {
+// Copy constructor implementation
+Person::Person(const Person &p) {
 	this->firstName = p.firstName;
 	this->lastName = p.lastName;
 	this->id = p.id;
 }
 
-void Person::printInfo() {
-
-	cout<<"First Name: "<< this->firstName<<endl;
-	cout<<"Last Name: "<< this->lastName<<endl;
-	cout<<"Id: "<< this->id<<endl;
+// Parameterized constructor definition
+Person::Person(string firstName, string lastName, string id) {
+	this->firstName = firstName;
+	this->lastName = lastName;
+	this->id = id;
+	cout << "--->create person" << endl;
 }
 
+// Copy assignment operator definition
+void Person::operator=(const Person &p) {
+	this->firstName = p.firstName;
+	this->lastName = p.lastName;
+	this->id = p.id;
+}
 
-string Person::getFirstName(){
+// Print person information
+void Person::printInfo() {
+	cout << "First Name: " << this->firstName << endl;
+	cout << "Last Name: " << this->lastName << endl;
+	cout << "Id: " << this->id << endl;
+}
+
+// Getter and setter methods
+string Person::getFirstName() {
 	return firstName;
 }
 
@@ -50,17 +63,10 @@ void Person::setId(const string id) {
 	this->id = id;
 }
 
-string Person::getLastName(){
+string Person::getLastName() {
 	return lastName;
-}
-//
-Person::Person(Person &p) {
-	this->firstName = p.firstName;
-	this->lastName = p.lastName;
-	this->id = p.id;
 }
 
 void Person::setLastName(string lastName) {
 	this->lastName = lastName;
 }
-
