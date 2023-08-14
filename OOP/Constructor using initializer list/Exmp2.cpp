@@ -45,11 +45,11 @@ public:
 
 
 //In this code:
-//
-//The Ex1 class remains the same as in the previous example.
-//
+
+//The Ex1 class has a default constructor and a parameterized constructor. The parameterized constructor initializes the private member x with the given value and prints a message.
+
 //The Ex2 class has a default constructor and a parameterized constructor. However, the parameterized constructor now uses an initializer list to directly initialize members and the ex1 object.
-//
+
 //In the main function, an Ex2 object ex2_init is created using the parameterized constructor with arguments 2 and 3.
 
 //When you run the program, the following output is generated:
