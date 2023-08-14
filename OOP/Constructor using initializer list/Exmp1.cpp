@@ -1,3 +1,7 @@
+/*
+ *      Author: MaksiKutrolli
+ */
+
 #include <iostream>
 using namespace std;
 
