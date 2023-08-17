@@ -11,7 +11,7 @@ using namespace std;  // Use the standard namespace for easier access to standar
 
 // Constructor definition for Vector class (Default constructor)
 Vector::Vector() {
-	size = 1;          // Initialize the size to 10
+	size = 1;          // Initialize the size to 1
 	data = new int[size];  // Allocate memory for the data array
 }
 
