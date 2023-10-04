@@ -24,34 +24,28 @@ ArrayStackG<T,R>::~ArrayStackG() {
 
 template <typename T, typename R>
 int ArrayStackG<T,R>::size()const{
-	return t+1;
+	// TODO
 }
 
 template <typename T, typename R>
 bool ArrayStackG<T,R>::empty()const{
-	return (t < 0);
+	// TODO
 }
 
 template <typename T, typename R>
 const T& ArrayStackG<T,R>::top() const throw(R){
-	if (empty()) throw R("Top of empty stack");
-	return S[t];
+	// TODO
 }
 
 template <typename T, typename R>
 void ArrayStackG<T,R>::push(const T& e){
-	if (size() == capacity) throw R("Push to full stack");
-	t++;
-	S[t] = e;
-
+	// TODO
 }
 
 template <typename T, typename R>
 void ArrayStackG<T,R>::pop() throw(R){
-	if (empty()) throw R("Pop from empty stack");
-	--t;
-
+	// TODO
 }
 
-template class ArrayStackG<int, StackException>;
-template class ArrayStackG<string, StackException>;
+// TODO
+// TODO
