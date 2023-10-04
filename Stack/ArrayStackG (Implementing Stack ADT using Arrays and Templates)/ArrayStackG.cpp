@@ -6,7 +6,7 @@
 
 #include "StackException.h"
 
-#include <iostream>
+#include <iostream> 
 
 using namespace std;
 
@@ -19,7 +19,7 @@ ArrayStackG<T,R>::ArrayStackG(int cap): S(new T[cap]), capacity(cap), t(-1) {
 
 template <typename T, typename R>
 ArrayStackG<T,R>::~ArrayStackG() {
-	// TODO Auto-generated destructor stub
+	// TODO Auto-generated destructor stub 
 }
 
 template <typename T, typename R>
