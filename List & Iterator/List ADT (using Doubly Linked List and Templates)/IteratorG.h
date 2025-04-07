@@ -12,6 +12,7 @@ template <typename T>
 
 class IteratorG {
 public:
+	IteratorG(DNodeG<T>* u); // create from node
 	T& operator*(); // reference to the element
 	bool operator==(const IteratorG& p) const; // compare positions
 	bool operator!=(const IteratorG& p) const;
@@ -21,7 +22,7 @@ public:
 	friend class NodeListG<T>; // give NodeList access
 private:
 	DNodeG<T>* v; // pointer to the node
-	IteratorG(DNodeG<T>* u); // create from node
+	
 };
 
 #endif /* ITERATORG_H_ */
